@@ -1,14 +1,16 @@
-
+*{
+    font-family:Calibri;
+}
 header{
     position: absolute;
     display: flex;
     height:60px;
     width: 100%;
-    background-color:antiquewhite;
+    background-color:#8673a1;
     margin-left: -8px;
     margin-top: -8px;
 }
-h1 .logo{
+h1.logo{
     margin: 0px;
     width: 100%;
 }
@@ -18,4 +20,37 @@ h1 .logo{
     width: 15%;
     display:block;
     text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 150px;
+    display:inline-flex;
+}
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: #000000;
+    padding: 7px 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    border-radius: 30px;
+} 
+
+li a:hover{
+    background-color: #555;
+    color: white;
+}
+
+.menu{
+    width: 75%;
+    text-align: center;
+    align-self: center;
+
 }
