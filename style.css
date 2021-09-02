@@ -1,5 +1,6 @@
 *{
     font-family:cursive;
+    font-size:19px
 }
 
 .container{
@@ -70,9 +71,10 @@ li a:hover{
 }
 
 .slideshow-container{
-    margin-top:60px;
     max-width: 1000px;
     position: relative;
+    margin:auto;
+    margin-top:60px; 
 }
 
 .mySlides{
@@ -83,6 +85,7 @@ li a:hover{
     cursor: pointer;
     position: absolute;
     top: 50%;
+    color: #ffffff;
     width: auto;
     margin-top:-20px;
     padding: 15px;
@@ -99,14 +102,14 @@ li a:hover{
 }
 
 .prev:hover, .next:hover{
-    background-color:rgba(0, 0, 0, 0.2);
+    background-color:rgba(247, 242, 242, 0.2);
 }
 
 .text{
     font-size:15px;
     padding: 8px 12s;
     position: absolute;
-    bottom: 10px;
+    bottom: 60px;
     width: 100%;
     text-align:center;
 }
