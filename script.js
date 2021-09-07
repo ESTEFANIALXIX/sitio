@@ -39,3 +39,5 @@ function showSlide(n){
         showSlide(slideIndex);
     }, 7777);
 }
+
+
