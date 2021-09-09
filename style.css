@@ -3,8 +3,18 @@
 }
 
 *{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size:19px
+    overflow: hidden;
+}
+
+@font-face{
+    font-family: Get Schwifty;
+    src: url(../get_schwifty.ttf);
+}
+
+body{
+    margin:auto;
+    height:100vh;
+    overflow: auto;
 }
 
 .container{
@@ -41,18 +51,19 @@ header{
     height: inherit;
 }
 
-ul{
+.menu ul{
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    width: 150px;
+    width: 380px;
     display:inline-flex;
 }
-li{
+
+.menu li{
     float: left;
 }
 
-li a{
+.menu li a{
     display: block;
     color: #11b0c8;
     padding: 7px 15px;
@@ -60,11 +71,12 @@ li a{
     text-align: center;
     font-size: large;
     border-radius: 30px;
+    font-family: Get Schwifty;
 } 
 
-li a:hover{
+.menu li a:hover{
     background-color: rgb(255, 255, 255);
-    color: white;
+    color: #11b0c8;
 }
 
 .menu{
@@ -89,7 +101,7 @@ li a:hover{
     cursor: pointer;
     position: absolute;
     top: 50%;
-    color: #ffffff;
+    color: #11b0c8;
     width: auto;
     margin-top:-20px;
     padding: 15px;
@@ -136,8 +148,8 @@ li a:hover{
     transition: background-color 1s ease;
 }
 
-.active, .dot:hovers{
-    background-color: #71717171;
+.active, .dot:hover{
+    background-color: #faf75c;
 }
 
 .fade{
@@ -158,7 +170,6 @@ li a:hover{
 }
 
 .grid-container{
-    margin-top:2%;
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 5px;
@@ -170,9 +181,60 @@ li a:hover{
     text-align: center;
     height: 200px;
     width: 85%;
+    transition:transform .2s;
   }
+
+.grid-item:hover{
+    transform: scale(1.2);
+} 
 
 .grid-item img {
     height: inherit;
     width: inherit;
+ }
+
+.container-footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 5px;
+    background-color:#ffffff;
+}
+
+.grid-footer {
+    padding: 20px;
+    font-size: 30px;
+    height: 250px;
+    width: 90%;
   }
+
+.grid-footer  li a{
+    display: block;
+    color: #11b0c8;
+    text-decoration: none;
+    font-family: Get Schwifty;
+}
+
+.grid-footer h6{
+    margin-block-start: 1em;
+    margin-inline-start: 0px;
+    padding-inline-start: 40px;
+
+}
+.grid-footer ul{
+    list-style-type: none;
+}
+
+.container-icons{
+    position: absolute;
+    top: 50%;
+    font-size:35px;
+}
+
+.whatsapp{
+    color:green;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+}
