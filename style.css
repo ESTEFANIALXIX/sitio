@@ -19,7 +19,7 @@ body{
 
 .container{
     width: 100%;
-    height: 100%;
+    height: 70%;
     display: flex;
 
 }
@@ -34,7 +34,7 @@ header{
     position: absolute;
     display: flex;
     height:60px;
-    width: 100%;
+    width: 99%;
     background-color:#faf75c;
     margin-left: -8px;
     margin-top: -8px;
@@ -209,15 +209,18 @@ header{
 
 .grid-footer  li a{
     display: block;
-    color: #11b0c8;
+    color: #000;
     text-decoration: none;
-    font-family: Get Schwifty;
+    font-size:80%;
 }
 
 .grid-footer h6{
     margin-block-start: 1em;
     margin-inline-start: 0px;
     padding-inline-start: 40px;
+    font-family: Get Schwifty;
+    color: #11b0c8;
+    font-size:120%;
 
 }
 .grid-footer ul{
@@ -232,6 +235,14 @@ header{
 
 .whatsapp{
     color:green;
+}
+
+.instagram{
+    color:#DD2A7B
+}
+
+.facebook{
+    color:#3b5998
 }
 
 footer{
